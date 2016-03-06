@@ -184,6 +184,7 @@
             self.alpha = 0;
         } completion:^(BOOL finished) {
             [self removeFromSuperview];
+            _alertView.transform = CGAffineTransformIdentity;
         }];
     }
 }
